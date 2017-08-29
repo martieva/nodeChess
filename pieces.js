@@ -131,7 +131,7 @@ class Pawn extends Piece{
     let moves = new ChessArray();
     if(this.validSpace(this.adjust(this.x,1), this.y)){
       moves.push([this.adjust(this.x,1), this.y]);
-      if(!this.hasMoved && this.validSpace(this.adjust(this.x,2), this.y){
+      if(!this.hasMoved && this.validSpace(this.adjust(this.x,2), this.y)){
         moves.push([this.adjust(this.x,2), this.y]);
       }
       if(this.validSpace(this.adjust(this.x,1), this.y+1)===1){
@@ -196,12 +196,12 @@ function checkForKing(x, y, color, adjust){
       if(xyPiece.color == color){
         safeXY = true;
       }else{
-        if(xyPiece.name == 'B' || xyPiece.name == 'Q' || xyPiece.name == 'K' || (i === 1 && xyPiece.name = 'p')){
+        if(xyPiece.name == 'B' || xyPiece.name == 'Q' || xyPiece.name == 'K' || (i === 1 && xyPiece.name == 'p')){
           return false;
         }
       }
     }
-    
+
   }
 }
 function perpendicularMoves(x, y, validSpace){
