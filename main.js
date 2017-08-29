@@ -1,3 +1,4 @@
+//Replace var with const/let. Maybe turn pieces into a factory.
 var pieces = new Pieces();
 var model = new ChessModel();
 var controller = new ChessController();
